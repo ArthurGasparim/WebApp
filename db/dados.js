@@ -39,5 +39,11 @@
   ],
   "fornecedores": [],
   "produtos": [],
-  "usuarios": []
+  "usuarios": [
+    {
+      "id": "1",
+      "nome": "Arthur",
+      "senha": "sArthur"
+    }
+  ]
 }
