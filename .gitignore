@@ -1,3 +1,6 @@
+# Automation
+*.bat
+
 # Logs
 logs
 *.log
