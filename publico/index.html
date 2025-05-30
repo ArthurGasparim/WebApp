@@ -3,14 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página principal da aplicação</title>
+    <link rel="stylesheet" href="./css/vitrine.css"/>
+    <link rel="stylesheet" href="./css/bootstrap.min.css"/>
+    <title>SickRoad</title>
 </head>
 <body>
-     <h1>Bem-vindo a página principal da aplicação.</h1>
-     <h2>Aqui deveria existir um menu.</h2>
-     <p>Para continuar realize o login</p>
-     <a href="/login.html">Login</a>
-     <p>Para se cadastrar, entre no link abaixo</p>
-     <a href="/cadastro.html">Cadastro</a>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <h1>Logo</h1>
+                <div class="ms-auto">
+                    <button class="btn btn-primary" type="button" onclick="window.location.href='./login'">Login</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div style="height: 6rem;"></div> <!-- Header Spacer -->
+
+    <main>
+        <div id="vitrine" class="vitrine">
+            
+        </div>
+    </main>
 </body>
+<script src="./js/vitrine.js"></script>
 </html>

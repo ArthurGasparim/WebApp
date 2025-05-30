@@ -1,7 +1,21 @@
 .vitrine {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem 2rem;
     align-items: center;
     justify-content: center;
+}
+
+header {
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 3rem;
+    position: fixed;
+    z-index: 10;
+}
+
+main {
+    padding-left: 2rem;
+    padding-right: 4rem;
 }
