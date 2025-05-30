@@ -37,52 +37,65 @@
       "cep": "21035-070"
     }
   ],
-  "fornecedores": [],
+  "fornecedores": [
+    {
+      "id": "4899",
+      "nome": "Marcos",
+      "cnpj": "2133123",
+      "cep": "141244"
+    },
+    {
+      "id": "fbb8",
+      "nome": "Jorge",
+      "cnpj": "2133123",
+      "cep": "141244"
+    }
+  ],
   "produtos": [
     {
-      "id" : 1,
-      "nome" : "Hydroxy Trembolona",
-      "quantidade" : 10,
-      "preco" : 99.99,
-      "catID" : 0,
-      "fornID" : 0,
-      "imagem" : "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Trenbolone.svg/250px-Trenbolone.svg.png"
+      "id": "1",
+      "nome": "Hydroxy Trembolona",
+      "quantidade": 10,
+      "preco": 99.99,
+      "catID": 0,
+      "fornID": 0,
+      "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Trenbolone.svg/250px-Trenbolone.svg.png"
     },
     {
-      "id" : 2,
-      "nome" : "Fulminated Mercury",
-      "quantidade" : 5,
-      "preco" : 199.99,
-      "catID" : 0,
-      "fornID" : 0,
-      "imagem" : "https://homework.study.com/cimages/multimages/16/mercury4535795496377649111.jpg"
+      "id": "2",
+      "nome": "Fulminated Mercury",
+      "quantidade": 5,
+      "preco": 199.99,
+      "catID": 0,
+      "fornID": 0,
+      "imagem": "https://homework.study.com/cimages/multimages/16/mercury4535795496377649111.jpg"
     },
     {
-      "id" : 3,
-      "nome" : "Dihydrogen monoxide",
-      "quantidade" : 10000,
-      "preco" : 0.99,
-      "catID" : 0,
-      "fornID" : 0,
-      "imagem" : "https://i.pinimg.com/736x/70/47/92/704792c06785454c0b411bbcdec1ee24.jpg"
+      "id": "3",
+      "nome": "Dihydrogen monoxide",
+      "quantidade": 10000,
+      "preco": 0.99,
+      "catID": 0,
+      "fornID": 0,
+      "imagem": "https://i.pinimg.com/736x/70/47/92/704792c06785454c0b411bbcdec1ee24.jpg"
     },
     {
-      "id" : 4,
-      "nome" : "Sodium hydroxide",
-      "quantidade" : 100,
-      "preco" : 10.99,
-      "catID" : 0,
-      "fornID" : 0,
-      "imagem" : "https://www.hoffmanmfg.com/wp-content/uploads/NaOh.jpg"
+      "id": "4",
+      "nome": "Sodium hydroxide",
+      "quantidade": 100,
+      "preco": 10.99,
+      "catID": 0,
+      "fornID": 0,
+      "imagem": "https://www.hoffmanmfg.com/wp-content/uploads/NaOh.jpg"
     },
     {
-      "id" : 3,
-      "nome" : "Monóxido de Di-hidrogênio",
-      "quantidade" : 10000,
-      "preco" : 0.99,
-      "catID" : 0,
-      "fornID" : 0,
-      "imagem" : "https://i.pinimg.com/736x/70/47/92/704792c06785454c0b411bbcdec1ee24.jpg"
+      "id": "3",
+      "nome": "Monóxido de Di-hidrogênio",
+      "quantidade": 10000,
+      "preco": 0.99,
+      "catID": 0,
+      "fornID": 0,
+      "imagem": "https://i.pinimg.com/736x/70/47/92/704792c06785454c0b411bbcdec1ee24.jpg"
     }
   ],
   "usuarios": [

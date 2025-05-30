@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Fornecedores</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+</head>
+<body>
+    <form id="formCadForn" action="#" method="POST" class="row g-3 needs-validation border m-1 p-2" novalidate>
+            <div class="col-md-4">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nome" required>
+                <div class="invalid-feedback">
+                    Por favor, informe o nome do Fornecedor!
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="cpf" class="form-label">CNPJ:</label>
+                <input type="text" class="form-control" id="cnpj" required>
+                <div class="invalid-feedback">
+                    Por favor, informe o seu cnpj!
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label for="cep" class="form-label">CEP:</label>
+                <input type="text" class="form-control" id="cep" required>
+                <div class="invalid-feedback">
+                    Por favor, informe um cep.
+                </div>
+            </div>
+                <div class="col-12 text-center">
+                    <button class="btn btn-primary" type="submit">Cadastrar</button>
+                    <a href="../../index.html" class="btn btn-secondary">Voltar</a>
+                </div>
+        </form>
+        <div id="tabela" class="table ">
+            
+        </div>
+    </div>
+</body>
+<script src='/js/bootstrap.bundle.min.js'></script>
+<script src="/js/scriptFornecedor.js"></script>
+</html>
