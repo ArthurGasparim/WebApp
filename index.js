@@ -119,59 +119,83 @@ app.post("/cadastro",(requisicao,resposta) => {
 app.post("/login", (requisicao, resposta) => {
     // desestruturação javascript
     const {usuario, senha} = requisicao.body;
-    if (usuario === "admin" && senha === "admin") {
-        requisicao.session.autenticado = true;
-        resposta.redirect("/menu.html");
-    } else {
-        let conteudo = `
-            <!DOCTYPE html>
-            <html lang="pt-br">
-    
-                <head>
-                <meta charset="UTF-8">
-                <title>Login</title>
-                <link rel="stylesheet" href="css/bootstrap.min.css">
-                <link rel="stylesheet" href="css/login.css">
-                </head>
-    
-                <body>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-6 offset-md-3">
-                                <h2 class="text-center text-dark mt-5">Bem-vindo</h2>
-                                <div class="text-center mb-5 text-dark">Faça o login</div>
-                                <div class="card my-5">
-                                    <form class="card-body cardbody-color p-lg-5" action="/login" method="post">
-                                        <div class="text-center">
-                                            <img src="/imagens/login-avatar.webp"
-                                                 class="img-fluid profile-image-pic img-thumbnail rounded-circle my-3"
-                                                 width="200px" alt="profile">
-                                        </div>
-                                        <div class="mb-3">
-                                            <input type="text" class="form-control" id="usuario" value="${usuario}" name="usuario"
-                                                   aria-describedby="emailHelp"
-                                                   placeholder="Usuário">
-                                        </div>
-                                        <div class="mb-3">
-                                            <input type="password" class="form-control" id="senha" name="senha" placeholder="Senha">
-                                        </div>
-                                        <div class="text-center">
-                                            <button type="submit" class="btn btn-color px-5 mb-5 w-100">Login</button>
-                                        </div>
-                                        <div class="alert alert-danger">Usuário ou senha incorretos!</div>
-                                    </form>
+    fetch(fetchU)
+    .then(resposta =>{
+        if(resposta.ok)
+            return resposta.json();
+    })
+    .then(dados =>{
+        for(let usu of dados)
+        {
+            if(usu.nome === usuario && usu.senha === senha)
+            {
+                requisicao.session.autenticado = true;
+                break;
+            }
+        }
+        if(requisicao.session.autenticado)
+        {
+           return resposta.redirect("/menu.html");
+        }
+          
+        else
+        {
+            let conteudo = `
+                <!DOCTYPE html>
+                <html lang="pt-br">
+        
+                    <head>
+                    <meta charset="UTF-8">
+                    <title>Login</title>
+                    <link rel="stylesheet" href="css/bootstrap.min.css">
+                    <link rel="stylesheet" href="css/login.css">
+                    </head>
+        
+                    <body>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 offset-md-3">
+                                    <h2 class="text-center text-dark mt-5">Bem-vindo</h2>
+                                    <div class="text-center mb-5 text-dark">Faça o login</div>
+                                    <div class="card my-5">
+                                        <form class="card-body cardbody-color p-lg-5" action="/login" method="post">
+                                            <div class="text-center">
+                                                <img src="/imagens/login-avatar.webp"
+                                                    class="img-fluid profile-image-pic img-thumbnail rounded-circle my-3"
+                                                    width="200px" alt="profile">
+                                            </div>
+                                            <div class="mb-3">
+                                                <input type="text" class="form-control" id="usuario" value="${usuario}" name="usuario"
+                                                    aria-describedby="emailHelp"
+                                                    placeholder="Usuário">
+                                            </div>
+                                            <div class="mb-3">
+                                                <input type="password" class="form-control" id="senha" name="senha" placeholder="Senha">
+                                            </div>
+                                            <div class="text-center">
+                                                <button type="submit" class="btn btn-color px-5 mb-5 w-100">Login</button>
+                                            </div>
+                                            <div class="alert alert-danger">Usuário ou senha incorretos!</div>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </body>
-    
-            </html>
-        `;
-        resposta.send(conteudo);
-        resposta.end();
-    }
-});
+                    </body>
+        
+                </html>
+            `;
+            resposta.send(conteudo);
+            resposta.end();
+        }
+        })
+        .catch(erro =>{
+            console.log("Erro GetLogin: "+erro);
+        })
+        console.log(requisicao.session.autenticado)
+        
+        }
+);
 
 // compartilhando conteúdo privado mediante autenticação
 app.use(verificarAutenticacao, express.static("privado"));
