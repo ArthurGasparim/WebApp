@@ -51,13 +51,23 @@
       "cep": "141244"
     }
   ],
+  "categorias": [
+    {
+      "id": "1",
+      "label": "Bodybuilding"
+    },
+    {
+      "id": "2",
+      "label": "Industrial"
+    }
+  ],
   "produtos": [
     {
       "id": "1",
       "nome": "Hydroxy Trembolona",
       "quantidade": 10,
       "preco": 99.99,
-      "catID": 0,
+      "catID": "0",
       "fornID": 0,
       "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Trenbolone.svg/250px-Trenbolone.svg.png"
     },
@@ -66,25 +76,25 @@
       "nome": "Fulminated Mercury",
       "quantidade": 5,
       "preco": 199.99,
-      "catID": 0,
+      "catID": "0",
       "fornID": 0,
       "imagem": "https://homework.study.com/cimages/multimages/16/mercury4535795496377649111.jpg"
     },
     {
       "id": "3",
-      "nome": "Dihydrogen monoxide",
+      "nome": "Dihydrogen Monoxide",
       "quantidade": 10000,
       "preco": 0.99,
-      "catID": 0,
+      "catID": "0",
       "fornID": 0,
       "imagem": "https://i.pinimg.com/736x/70/47/92/704792c06785454c0b411bbcdec1ee24.jpg"
     },
     {
       "id": "4",
-      "nome": "Sodium hydroxide",
+      "nome": "Sodium Hydroxide",
       "quantidade": 100,
       "preco": 10.99,
-      "catID": 0,
+      "catID": "0",
       "fornID": 0,
       "imagem": "https://www.hoffmanmfg.com/wp-content/uploads/NaOh.jpg"
     },
@@ -93,7 +103,7 @@
       "nome": "Monóxido de Di-hidrogênio",
       "quantidade": 10000,
       "preco": 0.99,
-      "catID": 0,
+      "catID": "0",
       "fornID": 0,
       "imagem": "https://i.pinimg.com/736x/70/47/92/704792c06785454c0b411bbcdec1ee24.jpg"
     }
