@@ -28,6 +28,13 @@ app.use(session({
 // qs: true - mais poderosa para lidar com parâmetros da requisição
 // querystring
 app.use(express.urlencoded({extended: true})); // midware
+
+// login auth redirect
+app.get("/login.html", (req, res, next) => {
+  if (req.session.autenticado) return res.redirect("/menu.html");
+  else return next();
+});
+
 // compartilhando publicamente os arquivos existentes na pasta "publico"
 app.use(express.static("publico")); // assets ou conteúdo estático
 
