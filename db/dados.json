@@ -51,6 +51,22 @@
       "cep": "141244"
     }
   ],
+  "entregadores": [
+    {
+      "id": "7c60",
+      "nome": "Nômade do Egito",
+      "cnpj": "123456",
+      "telefone": "1010",
+      "fornID": "fbb8"
+    },
+    {
+      "id": "64bb",
+      "nome": "Informante da Tailândia",
+      "cnpj": "654321",
+      "telefone": "999",
+      "fornID": "4899"
+    }
+  ],
   "categorias": [
     {
       "id": "1",
