@@ -210,7 +210,7 @@ app.use(verificarAutenticacao, express.static("privado"));
 
 app.get("/logout", (requisicao, resposta) => {
     requisicao.session.destroy(); // exclui a sessão de um usuário (aquele que escolheu acessar o endereço)
-    resposta.redirect("/login.html"); // lembre-se que esse recurso é público
+    resposta.redirect("/index.html"); // lembre-se que esse recurso é público
     resposta.end();
 });
 

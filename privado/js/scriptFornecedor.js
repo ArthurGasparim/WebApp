@@ -102,9 +102,8 @@ function excluirFornecedor(id){
                 listaFornecedores = listaFornecedores.filter((forn)=>{
                 return forn.id !== id;
                  })
-    
                 mostrarTabela();
-                  return resposta.json();
+                return resposta.json();
             }
         })
         .catch(erro => {
