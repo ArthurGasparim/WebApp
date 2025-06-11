@@ -131,6 +131,15 @@
       "catID": "1",
       "fornID": "4899",
       "imagem": "https://www.esportelandia.com.br/app/uploads/2023/11/399081435_1616057562254357_4213138168416979224_n-e1699130934424.jpg"
+    },
+    {
+      "id": "998b",
+      "nome": "(2R,3S,4R,5R)-2,3,4,5,6-pentahydroxyhexanal",
+      "quantidade": "99",
+      "preco": "1.99",
+      "catID": "1",
+      "fornID": "4899",
+      "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ43cCI9VhFcrdR6qZS5qobjZahyK7OcOt2yw&s"
     }
   ],
   "usuarios": [

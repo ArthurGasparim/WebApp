@@ -19,3 +19,7 @@ main {
     padding-left: 2rem;
     padding-right: 4rem;
 }
+
+.btn {
+    background-color: #9a0dfe !important;
+}
